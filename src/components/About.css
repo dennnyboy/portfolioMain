@@ -1,0 +1,10 @@
+.about {
+    background-image: url('./Images/BCKGRND.png');
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+  }
+  

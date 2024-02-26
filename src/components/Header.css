@@ -1,0 +1,46 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  z-index: 1000;
+}
+  
+  
+  .header.transparent {
+    background-color: transparent;
+    color: black; 
+  }
+  
+  .header.transparent nav a {
+    color: black; 
+  }
+  
+ 
+  .header.black {
+    background-color: black;
+    color: white; 
+  }
+  
+  .header.black nav a {
+    color: white; 
+  }
+  
+  nav {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease; 
+  }
