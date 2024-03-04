@@ -1,3 +1,28 @@
+/* General styling for the projects section */
 .project {
-    background-image: url('./Images/BCKGRND.png');
+  background-image: url('./Images/BCKGRND.png');
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 50px 0;
+}
+
+/* Styling for the container that holds all project cards */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap onto the next line as needed */
+  justify-content: space-around; /* Adjusts spacing between cards */
+  width: 100%; /* Ensures the container takes the full width of its parent */
+  max-width: 1600px; /* Adjust this value based on your design needs */
+
+}
+
+/* Media query for smaller screens to adjust project cards layout */
+@media (max-width: 768px) {
+  .projects-container {
+    justify-content: center; /* Ensures cards are centered on smaller screens */
+  }
 }

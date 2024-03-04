@@ -1,10 +1,96 @@
 .about {
-    background-image: url('./Images/BCKGRND.png');
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    height: 100vh; 
-  }
+  background-image: url('./Images/BCKGRND.png');
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 50px 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 1350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.about-me, .education-section {
+ 
+  width: 100%;
+}
+
+.education-section h2 {
+ padding: 0; 
+}
+
+.education-container {
+  padding-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+/* Base styles */
+/* Base styles */
+.education-entry {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 10px;
   
+
+  width: calc(33% - 40px); /* Initially display 3 in a row */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row; /* Keep logo and text side-by-side */
+  justify-content: start; /* Align items to the start */
+  align-items: center; /* Center items vertically */
+  text-align: left; /* Keep text aligned to the left */
+}
+
+.school-logo {
+  width: 80px;
+  height: auto;
+  margin-right: 20px; /* Space between logo and text */
+}
+
+.education-info {
+  flex-grow: 1; /* Allow the text block to expand */
+  text-align: right; /* Ensure text is always aligned to the left */
+}
+
+/* Adjustments for screen widths <= 1040px */
+@media (max-width: 1040px) {
+
+  .about {
+    height: auto;
+  }
+  .education-container {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .education-entry {
+    width: 100%; 
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .school-logo, .education-info {
+    text-align: center; 
+    align-self: center; 
+  }
+}
+
+/* Optional: Further adjustments for very small screens */
+@media (max-width: 768px) {
+  .education-info p {
+    font-size: 14px; /* Adjust text size for smaller screens, if needed */
+  }
+}

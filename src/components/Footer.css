@@ -1,0 +1,65 @@
+.footer {
+    position: relative;
+    height: auto;
+    padding: 50px 0; /* Top and bottom padding */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.socials a {
+    margin-right: 15px;
+}
+  
+.socials a:last-child {
+    margin-right: 0;
+}
+  
+.socials img {
+    height: 24px;
+    width: auto;
+}
+  
+.rights {
+    text-align: right;
+}
+  
+.rights p {
+    color: #6c757d;
+    margin: 0;
+    font-size: 14px;
+    padding-left: 25%; /* Adjust if necessary */
+}
+
+@media (max-width: 768px) {
+    .footer {
+      height: 135px;
+    }
+
+    .footer-container {
+      flex-direction: row; /* Keep the horizontal layout */
+      justify-content: space-between; /* Maintain space between socials and rights */
+      padding: 0 15px; /* Corrected padding syntax */
+    }
+  
+    .socials, .rights {
+      display: flex;
+      align-items: flex-start; /* Align items at the top */
+    }
+  
+    .socials {
+      flex: 1; /* Allows socials to grow, taking necessary space */
+    }
+  
+    .rights {
+      flex: 1; /* Allows rights to grow, taking necessary space */
+      text-align: right; /* Ensures text is right-aligned */
+    }
+}

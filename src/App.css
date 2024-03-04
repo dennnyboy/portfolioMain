@@ -1,69 +1,91 @@
 body, html, #root, .App {
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  scroll-behavior:smooth;
+  overflow-x: hidden; /* Prevent horizontal overflow */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
 }
 
-h1,a{
+a {
+  cursor:pointer;
+}
+
+h1, h2, a, button {
   font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 700;
-  font-style: normal;
+  
 }
 
-p {
-  font-family: "PT Sans" , sans-serif;
+h2 {
+  font-size: 32px;
+  color: #000435;
+  margin-bottom: 0;
+}
+
+p, li, label {
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
-  font-style: normal;
-
+  cursor:default;
 }
 
-html ::-webkit-scrollbar {
-  display: none;
+.overlay-text p {
+  font-size: 25px;
 }
 
 main {
   position: relative;
-  overflow-y: auto;
-  height: 100vh; /* Ensure it spans the full viewport height */
-  scroll-snap-type: y mandatory;
+  overflow-x: hidden; 
 }
 
 .section {
-  min-height: 100vh;
-  scroll-snap-align: start;
   padding: 20px;
   box-sizing: border-box;
 } 
 
 .stayBottom {
   position: fixed;
-  bottom: 0; /* Align with the bottom */
-  left: 0; /* Align to the left */
-  width: 100%; /* Extend full width on mobile */
-  padding: 15px 0; /* Adjust padding to increase height */
-  background-color: #007bff; /* Background color */
-  color: white; /* Text color */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  background-color:#000868;
+  color: white;
+  text-align: center;
   border: none;
-  text-align: center; /* Center the text/button label */
-  border-radius: 0; /* Remove border radius for a solid bar appearance */
   cursor: pointer;
 }
 
-/* Desktop and larger devices */
 @media (min-width: 768px) {
   .stayBottom {
-    position: fixed;
     bottom: 20px;
     left: 50%;
-    width: auto; /* Auto width for desktop */
-    padding: 10px 20px; /* Adjust padding */
-    transform: translateX(-50%); /* Center horizontally */
-    border-radius: 5px; /* Rounded corners for aesthetics */
+    width: auto;
+    padding: 10px 20px;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    font-size: 16px;
   }
+}
+
+.particles-overlay-container {
+  position: relative;
+  height: 100vh;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FFF;
+  z-index: 10;
+  text-align: center;
+}
+
+.overlay-text {
+  width: 75%;
+}
+
+.overlay-text h1 {
+  font-size: 55px;
 }

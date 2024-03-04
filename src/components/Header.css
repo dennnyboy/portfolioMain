@@ -1,46 +1,62 @@
 .header {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px 0;
+  top: 20px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  width: auto; 
+  max-width: 80%; 
+  padding: 20px 40px; 
+  border-radius: 50px; 
   transition: background-color 0.3s ease, color 0.3s ease;
   z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
 }
-  
-  
-  .header.transparent {
-    background-color: transparent;
-    color: black; 
+
+.header.transparent {
+  background-color: white ;
+  color: black;
+}
+
+.header.transparent nav a {
+  color: black;
+}
+
+.header.black {
+  background-color: #000435;
+  color: white;
+}
+
+.header.black nav a {
+  color: white;
+}
+
+nav {
+  width: 100%; 
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  margin: 0 10px; 
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+
+/* Media Query for devices with width 470px or less */
+@media (max-width: 470px) {
+  .header {
+    padding: 10px 20px; /* Reduced padding */
+    border-radius: 25px; /* Optional: Adjust the border-radius for smaller screens */
   }
-  
-  .header.transparent nav a {
-    color: black; 
-  }
-  
- 
-  .header.black {
-    background-color: black;
-    color: white; 
-  }
-  
-  .header.black nav a {
-    color: white; 
-  }
-  
-  nav {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
+
   nav a {
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 16px;
-    font-weight: bold;
-    transition: color 0.3s ease; 
+    margin: 0 5px; /* Reduced margin between links */
+    font-size: 14px; /* Smaller font size */
   }
+}

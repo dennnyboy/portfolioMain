@@ -1,35 +1,36 @@
-
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-scroll';
 import './Header.css';
 
-function Header({ scrollContainerRef }) {
+function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (scrollContainerRef.current.scrollTop > 1) { 
+      const scrollLine = 550; 
+      if (window.scrollY > scrollLine) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
       }
     };
 
-    const scrollContainer = scrollContainerRef.current;
-    scrollContainer.addEventListener('scroll', handleScroll); 
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      scrollContainer.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
-  }, [scrollContainerRef]); 
+  }, []);
 
   return (
     <header className={`header ${isScrolled ? 'black' : 'transparent'}`}>
-       <nav>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/projects">Projects</a>
-        <a href="/contact">Contact</a>
-      </nav>
+      <nav>
+      <Link activeClass="active" to="home" spy={true} smooth={true} duration={500}>Home</Link>
+      <Link activeClass="active" to="about" spy={true} smooth={true}  duration={500}>About</Link>
+      <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-50} duration={500}>Skills</Link>
+      <Link activeClass="active" to="project" spy={true} smooth={true} offset={-50}  duration={500}>Projects</Link>
+      <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-70} duration={500}>Contact</Link>     
+     </nav>
     </header>
   );
 }
