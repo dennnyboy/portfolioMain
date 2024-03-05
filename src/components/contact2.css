@@ -1,10 +1,9 @@
-/* Contact.css */
 .contact2 {
   background-image: url('./Images/BCKGRND.png');
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   height: auto;
   padding: 50px 0;
@@ -15,10 +14,10 @@
     max-width: 1200px;
     display: flex;
     flex-direction: column;
-    align-items: flex-end; /* This aligns the container's content to the right */
+    align-items: flex-end; 
     padding: 0 20px;
     padding-bottom: 60px;
-    text-align: right; /* Aligns text to the right */
+    text-align: right;
 }
 
 .email-button2 {
@@ -28,8 +27,8 @@
     text-decoration: none;
     border-radius: 5px;
     font-size: 16px;
-    align-self: flex-end; /* Centers the button within the container */
-    margin-top: 20px; /* Adds space above the button */
+    align-self: flex-end; 
+    margin-top: 20px; 
  
 }
 
@@ -49,7 +48,7 @@
 
 .modal-content {
   background-color: white;
-  padding: 5px 10px; /* Adjusted for minimal padding */
+  padding: 5px 10px; 
   border-radius: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;

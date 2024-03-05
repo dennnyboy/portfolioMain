@@ -1,10 +1,9 @@
-/* Contact.css */
 .contact {
   background-image: url('./Images/BCKGRND.png');
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   height: auto;
   padding: 50px 0;
@@ -15,9 +14,9 @@
   max-width: 1200px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Aligns content to the start (left) within the container */
+  align-items: flex-start; 
   padding: 0 20px;
-  text-align: left; /* Ensures text within the container aligns to the left */
+  text-align: left; 
 }
 
 .email-button {
@@ -27,9 +26,8 @@
   text-decoration: none;
   border-radius: 5px;
   font-size: 16px;
-  transition: background-color 0.3s ease;
-  align-self: flex-start; /* Centers the button within the container */
-  margin-top: 20px; /* Adds space above the button */
+  align-self: flex-start; 
+  margin-top: 20px; 
 }
 
 
@@ -38,6 +36,6 @@
     height: auto;
   }
   .container {
-    width: 100%; /* Ensures the container takes full width on smaller screens */
+    width: 100%;
   }
 }
