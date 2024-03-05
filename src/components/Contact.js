@@ -8,7 +8,7 @@ const Contact = () => {
     <div className="section contact">
       <di className="container">
       <h2>Ready to Connect?</h2>
-      <p>I would love to connect and share my passion for Web Development. <br />Whether you need assistance with a small project to me joining your team full time <br />my inbox is always open. </p>
+      <p>I would love to connect and share my passion for Web Development with you. <br />Whether you need assistance with a small project or want me to join your team <br />my inbox is always open. </p>
       <a href={`mailto:${email}`} className="email-button">Email Me</a>
     </di>
       
