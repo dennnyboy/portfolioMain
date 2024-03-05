@@ -71,3 +71,12 @@
   margin: 10px 5px;
   cursor: pointer;
 }
+
+@media (max-width: 1040px) {
+  .contact2 {
+    height: auto;
+  }
+  .container2 {
+    width: 100%;
+  }
+}

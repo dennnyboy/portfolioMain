@@ -50,8 +50,13 @@ const Projects = (props) => {
 
   return (
     <div id={props.id} className="section project">
+      <div className='project-intro'>
       <h2>Some of the Stuff I've Worked on</h2>
       <p>These are just some of the few projects that I have worked on. If you would like to see more please head over to my Github. </p>
+      <a href="https://github.com/dennnyboy" target="_blank" rel="noopener noreferrer" className='project-button'>
+        Github
+      </a>
+      </div>
       <div className="projects-container"> 
         {projectData.map((project, index) => (
           <ProjectCard key={index} {...project} />

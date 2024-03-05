@@ -5,12 +5,12 @@ const Skills = () => {
   const skillCategories = [
     {
       title: 'Frontend Development',
-      skills: ['React', 'HTML', 'CSS', 'JQuery', 'Javascript', 'Bootstrap', 'SASS', 'Wordpress', 'PHP'],
+      skills: ['React.js', 'HTML', 'CSS', 'JQuery', 'Javascript', 'Bootstrap', 'SASS', 'Wordpress', 'PHP'],
       description: 'Crafting responsive and interactive user interfaces with a focus on user experience.'
     },
     {
       title: 'Backend Development',
-      skills: ['MySQL', 'MongoDB', 'Express', 'ReactJS', 'Node', 'Handlebars', 'Webpack', 'GraphQl', 'Apollo-Servers'],
+      skills: ['MySQL', 'MongoDB', 'Express', 'Node', 'Webpack', 'GraphQl', 'Apollo-Servers'],
       description: 'Building robust server, database, and application logic ensuring scalability and performance.'
     },
     {

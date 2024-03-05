@@ -1,7 +1,7 @@
 body, html, #root, .App {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Prevent horizontal overflow */
+  overflow-x: hidden; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -48,11 +48,12 @@ main {
   left: 0;
   width: 100%;
   padding: 20px 0;
-  background-color:#000868;
+  background-color: #000868;
   color: white;
   text-align: center;
   border: none;
   cursor: pointer;
+  font-family: "Nunito", sans-serif; /* Keeping the font family the same */
 }
 
 @media (min-width: 768px) {
@@ -63,9 +64,17 @@ main {
     padding: 10px 20px;
     transform: translateX(-50%);
     border-radius: 50px;
-    font-size: 16px;
   }
 }
+
+/* Add this media query for mobile devices to adjust the font size */
+@media (max-width: 767px) {
+  .stayBottom {
+    font-size: 18px; /* Adjust this value to the desired font size on mobile */
+    padding: 15px 20px;
+  }
+}
+
 
 .particles-overlay-container {
   position: relative;
