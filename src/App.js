@@ -28,7 +28,7 @@ function App() {
           <Contact2 />
           <Footer id="footer"/>
       </main>
-      <a href="https://docs.google.com/document/d/1j8MZ70quA3liKtEEYbVVCoZ9nufc5MiR_P2yVh37XZA/edit?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+      <a href="https://docs.google.com/document/d/e/2PACX-1vSXOpZ0v_c3E99BMJK_OqAesCjT6rQj0aWrDpZEEpmMQWRPfZiv7vbJlmMKhfI6uhY4VPV633c8LCLB/pub" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
       <button className="stayBottom">View My Resume</button>
     </a>
       
