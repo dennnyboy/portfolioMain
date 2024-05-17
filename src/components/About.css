@@ -1,5 +1,5 @@
 .about {
-  background-image: url('./Images/BCKGRND.png');
+  background-image: url("./Images/BCKGRND.png");
   position: relative;
   display: flex;
   flex-direction: column;
@@ -18,13 +18,13 @@
   padding: 0 20px;
 }
 
-.about-me, .education-section {
- 
+.about-me,
+.education-section {
   width: 100%;
 }
 
 .education-section h2 {
- padding: 0; 
+  padding: 0;
 }
 
 .education-container {
@@ -41,52 +41,51 @@
   border-radius: 8px;
   padding: 20px;
   margin-top: 10px;
-  
-
-  width: calc(33% - 40px); 
+  width: calc(33% - 40px);
   box-sizing: border-box;
   display: flex;
-  flex-direction: row; 
-  justify-content: flex-start; 
-  align-items: center; 
-  text-align: left; 
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
 }
 
 .school-logo {
   width: 80px;
   height: auto;
-  margin-right: 20px; 
+  margin-right: 10px;
 }
 
 .education-info {
-  flex-grow: 1; 
-  text-align: right; 
+  flex-grow: 1;
+  text-align: right;
 }
 
-@media (max-width: 1040px) {
-
+@media (max-width: 1205px) {
   .about {
     height: auto;
   }
   .education-container {
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
   }
 
   .education-entry {
-    width: 100%; 
-    flex-direction: column; 
-    align-items: center; 
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .school-logo, .education-info {
-    text-align: center; 
-    align-self: center; 
+  .school-logo,
+  .education-info {
+    text-align: center;
+    align-self: center;
+    margin-right: 0;
   }
 }
 
 @media (max-width: 768px) {
   .education-info p {
-    font-size: 14px; 
+    font-size: 14px;
   }
 }
