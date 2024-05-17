@@ -1,17 +1,14 @@
+import React, { useEffect, useMemo } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { useEffect, useMemo } from "react";
 import { loadSlim } from "@tsparticles/slim";
 
 const ParticlesComponent = (props) => {
   useEffect(() => {
-    initParticlesEngine(async (engine) => {
+    const initParticles = async (engine) => {
       await loadSlim(engine);
-    });
+    };
+    initParticlesEngine(initParticles);
   }, []);
-
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
 
   const options = useMemo(
     () => ({
@@ -86,7 +83,7 @@ const ParticlesComponent = (props) => {
 
   return (
     <div className="section particles-wrapper">
-      <Particles id={props.id} init={particlesLoaded} options={options} />
+      <Particles id={props.id} options={options} />
     </div>
   );
 };
