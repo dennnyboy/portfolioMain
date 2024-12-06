@@ -14,7 +14,7 @@ const Skills = () => {
         "Bootstrap",
         "SASS",
         "Wordpress",
-        "PHP",
+        
       ],
       description:
         "Crafting responsive and interactive user interfaces with a focus on user experience.",
@@ -29,6 +29,7 @@ const Skills = () => {
         "Webpack",
         "GraphQl",
         "Apollo-Servers",
+        "PHP",
       ],
       description:
         "Building robust server, database, and application logic ensuring scalability and performance.",
